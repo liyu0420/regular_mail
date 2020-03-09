@@ -20,7 +20,7 @@ def do_report():
     print("report end")
 
 # 定时每日8点发送
-schedule.every().day.at("13:42").do(do_report)
+schedule.every().day.at("8:00").do(do_report)
 
 while True:
     schedule.run_pending()
